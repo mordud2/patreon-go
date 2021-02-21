@@ -47,10 +47,16 @@ type UserResponse struct {
 }
 
 type SocialConnections struct {
-	Discord DiscordConnection `json:"discord"`
+	DeviantArt SocialConnection `json:"deviantart"`
+	Discord    SocialConnection `json:"discord"`
+	Reddit     SocialConnection `json:"reddit"`
+	Spotify    SocialConnection `json:"spotify"`
+	Twitch     SocialConnection `json:"twitch"`
+	Twitter    SocialConnection `json:"twitter"`
+	YouTube    SocialConnection `json:"youtube"`
 }
 
-type DiscordConnection struct {
+type SocialConnection struct {
 	Url    string `json:"url"`
 	UserID string `json:"user_id"`
 }
