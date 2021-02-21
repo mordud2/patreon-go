@@ -11,6 +11,7 @@ type Pledge struct {
 	Attributes struct {
 		AmountCents    int      `json:"amount_cents"`
 		CreatedAt      NullTime `json:"created_at"`
+		Currency       string   `json:"currency"`
 		DeclinedSince  NullTime `json:"declined_since"`
 		PledgeCapCents int      `json:"pledge_cap_cents"`
 		PatronPaysFees bool     `json:"patron_pays_fees"`
